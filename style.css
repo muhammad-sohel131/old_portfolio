@@ -1,0 +1,439 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: 'Fira Sans', sans-serif;
+}
+ul li {
+	list-style: none;
+}
+/*Header Css*/
+.navBar {
+    background: #1AB5ED;
+    text-align: center;
+}
+.logo img {
+    width: 150px;
+    margin-top: -21px;
+}
+
+.navMenu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 10px;
+    background: #1904001f;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.navMenu {
+    display: flex;
+    flex-direction: column;
+}
+.navMenu {
+    display: none;
+}
+.navIcon i {
+    color: #fff;
+    font-size: 42px;
+    margin: 10px 0px;
+}
+.navTitle h1 {
+    margin-bottom: 10px;
+    margin-top: -24px;
+	color: #fff;
+}
+
+.navMenu a:hover {
+    background: #0000ff36;
+}
+[class*="col-"]{
+	float: left;
+}
+
+[class*="col-"]{
+	width: 100%
+}
+.navBar::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+
+
+/*profile css*/
+.Profile {
+    margin: 60px 0px;
+    text-align: center;
+    position: relative;
+    height: 606px;
+}
+
+.Profile .top-img {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    width: 120px;
+	transition: transform 2s;
+}
+.Profile .top-img:hover {
+    transform: rotate(360deg);
+}
+
+.profileDes {
+    position: absolute;
+    top: 150px;
+}
+
+.Profile .bottom-img {
+    width: 120px;
+    bottom: 0px;
+    left: 50px;
+    position: absolute;
+	transition: transform 2s;
+}
+.Profile .bottom-img:hover {
+	transform: rotate(360deg);
+}
+
+.Profile::after {content: '';display: table;clear: both;}
+
+.profileDes h1 {
+    margin-bottom: 30px;
+    font-family: 'Satisfy', cursive;
+    font-size: 45px;
+}
+
+.profileDes p {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+	color: gray;
+}
+
+/*About css*/
+.AboutMe::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.AboutMe {
+	background: #1AB5ED;
+	padding: 80px 0px;
+	text-align: center;
+	color: #fff;
+}
+.AboutImg img {
+    width: 210px;
+    height: 250px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px 1px #a0a0a0;
+}
+
+.AboutMe h2 {
+    margin-bottom: 15px;
+    text-transform: capitalize;
+	font-size: 35px
+}
+
+.hrClass {
+    border: 3px dotted #fff;
+    border-bottom: navajowhite;
+    width: 75px;
+    margin: auto;
+}
+
+.AboutImg {
+    margin: 30px 0px;
+}
+.aboutBio p {width: 90%;margin: 15px auto;color: #fff;}
+
+.aboutInfo p {
+    margin: 10px 0px;
+    font-size: 20px;
+}
+
+.aboutInfo {
+    margin-top: 52px;
+}
+
+.aboutInfo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+hr.solidhr {
+    border: 1px solid #fff;
+    border-bottom: none;
+}
+
+
+/*my Work experience CSS*/
+.myExprience {
+    margin: 8% 5%;
+}
+.myExprience::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.myExprience>h1 {
+    text-align: center;
+    margin: 10px 0px;
+}
+.myExprience>hr {
+    border: 3px dotted orange;
+    border-bottom: navajowhite;
+    margin-bottom: 30px;
+}
+.cardIcon img {
+    width: 114px;
+    border: 2px solid #FFEB3B;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.card {
+    background: #FFCA4F;
+    color: #fff;
+    margin: 10px;
+    padding: 60px 20px 60px 35px;
+    border-radius: 5px;
+	transition: box-shadow 1s;
+}
+.card:hover {
+    box-shadow: 0px 4px 10px -3px orange;
+}
+
+.cardIcon {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cardTitle h2 {
+    text-align: center;
+    background: #0403002b;
+    border-radius: 5px;
+    padding: 7px;
+    margin-bottom: 30px;
+}
+
+
+.cardDetails li {
+    margin-bottom: 10px;
+}
+.cardDetails ul li {
+	position: relative;
+	margin: 37px 0px;
+	font-size: 18px;
+}
+.cardDetails ul li::before {
+	content: '';
+	width: 100%;
+	height: 12px;
+	background: #0403002b;
+	position: absolute;
+	top: calc(100% + 5px);
+	border-radius: 100px;
+}
+.cardDetails ul li::after {
+	content: '';
+	width: 0%;
+	height: 12px;
+	background: white;
+	position: absolute;
+	top: calc(100% + 5px);
+	left: 0;
+	border-radius: 100px;
+	animation-duration: 3s;
+	animation-delay: 1s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+}
+.cardDetails ul li.html::after {
+	animation-name: html;
+}
+@keyframes html {
+	to{
+		width: 90%;
+	}
+}
+.cardDetails ul li.css::after {
+	animation-name: css;
+}
+@keyframes css {
+	to{
+		width: 80%
+	}
+}
+.cardDetails ul li.javascript::after {
+	animation-name: javascript;
+}
+@keyframes javascript {
+	to{
+		width: 75%
+	}
+}
+
+.cardDetails ul li.jquery::after {
+	animation-name: jquery;
+}
+@keyframes jquery {
+	to {
+		width: 70%;
+	}
+}
+.cardDetails ul li.php::after {
+	animation-name: php;
+}
+@keyframes php {
+	to{
+		width: 50%
+	}
+}
+
+
+/*aboutContact css*/
+.aboutContact::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.aboutContact {
+	background: #1AB5ED;
+	padding: 2% 5%;
+}
+.achivmentsDiv h2, contactDiv h2 {
+    color: #fff;
+    padding: 5% 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.achivmentsDiv p {
+    color: #fff;
+    margin: 5% 0;
+}
+.contactDiv h2 {
+    text-align: center;
+    color: #fff;
+    margin: 5% 0%;
+    text-transform: uppercase;
+}
+
+
+
+.contactDiv form {
+    margin: 5% auto;
+    width: 90%;
+}
+
+.contactDiv input, textarea {
+    width: 100%;
+    border: none;
+    padding: 3%;
+    margin: 1% 0;
+    border-radius: 5px;
+    text-align: center;
+	font-size: 18px;
+}
+form button {
+    border: none;
+    padding: 2% 6%;
+    font-size: 18px;
+    background: orange;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+
+.socialDiv h2 {
+    color: #fff;
+    text-align: center;
+    margin: 5% 0;
+    text-transform: uppercase;
+}
+
+
+.socialMenu i {
+    font-size: 30px;
+    padding: 15%;
+    border: none;
+    border-radius: 10px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+.socialMenu button {
+    background: none;
+    border: none;
+    margin: 2%;
+	cursor: pointer;
+}
+.socialMenu {
+    text-align: center;
+    margin: 8%;
+}
+
+
+/*footer CSS*/
+.footerDiv::after {
+	content: '';
+	clear: both;
+	display: table;
+}
+.footerDiv {
+	background: black;
+	color: #fff;
+	padding: 1% 5%;
+	text-align: center;
+}
+.footermenu a {
+    text-decoration: none;
+    color: #fff;
+    margin: 2%;
+    display: inline-block;
+}
+.copyRight span {
+    font-size: 13px;
+	margin-top: 2%;
+    display: block;
+}
+
